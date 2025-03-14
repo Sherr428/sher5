@@ -1,0 +1,12 @@
+BOT_TOKEN=("7932397370:AAFM2LfEgydyr_2ZdnIZ2eBs6Q8YFnWb75o")
+
+OWNER_USERNAME=("@DarkAdmin90")
+
+ADMIN_IDS=("7460924747")
+
+
+
+
+
+
+  
