@@ -96,7 +96,7 @@ async def genkey(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         else:
             response = "USAGE /genkey 1 HOURS and DAYS"
     else:
-        response = "❌ ACCESS DENIED. CONTACT OWNER - @RAJOWNER90"
+        response = "❌ ACCESS DENIED. CONTACT OWNER - @DarkAdmin90"
 
     await update.message.reply_text(response)
 
@@ -126,7 +126,7 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             save_keys()
             response = f"✅ **KEY REDEEMED SUCCESSFULLY**"
         else:
-            response = f"✨ **INVALID KEY!** Contact the BOT OWNER: @RAJOWNER90"
+            response = f"✨ **INVALID KEY!** Contact the BOT OWNER: @DarkAdmin90"
     else:
         response = f"❌ **USAGE**: `/redeem <key>`"
 
@@ -137,7 +137,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ YOU ARE NOT AUTHORIZED. DM OWNER @RAJOWNER90")
+        await update.message.reply_text("❌ YOU ARE NOT AUTHORIZED. DM OWNER @DarkAdmin90")
         return
 
     if len(context.args) != 3:
@@ -194,7 +194,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ **ACCESS DENIED**: You need to contact the owner @RAJOWNER90 for permission.")
+        await update.message.reply_text("❌ **ACCESS DENIED**: You need to contact the owner @DarkAdmin90 for permission.")
         return
 
     if flooding_process is None:
